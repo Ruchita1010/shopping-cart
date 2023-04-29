@@ -1,7 +1,11 @@
-import styles from '../styles/App.module.css';
+import Home from './components/Home';
 
 const App = () => {
-  return <div className={styles.App}></div>;
+  return (
+    <div className="App">
+      <Home />
+    </div>
+  );
 };
 
 export default App;
