@@ -1,7 +1,5 @@
-import styles from '../styles/Home.module.css';
-
 const Home = () => {
-  return <div className={styles.home}></div>;
+  return <div>Shop now</div>;
 };
 
 export default Home;
