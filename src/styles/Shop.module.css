@@ -1,0 +1,6 @@
+.product_card_grid {
+  padding: 4vmax;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20vmax, 1fr));
+  gap: 1.4vmax;
+}
