@@ -1,6 +1,12 @@
 .product_card {
   margin: 1vmax 0;
   font-size: 1.4vmax;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product_card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 .product_img {
