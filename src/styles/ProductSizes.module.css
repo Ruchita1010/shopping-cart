@@ -1,0 +1,16 @@
+.product_sizes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.1rem;
+}
+
+.product_size {
+  padding: 1.4vmax;
+  font-size: 1.6vmax;
+  color: #252323;
+  background-color: #ffffff;
+  border: 1px solid #d0d0d0;
+  text-align: center;
+  border-radius: 4px;
+  outline: none;
+}
