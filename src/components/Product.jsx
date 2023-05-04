@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import data from '../data/data';
+import data from '../data/data.json';
 import ProductSizes from './ProductSizes';
 import styles from '../styles/Product.module.css';
 
