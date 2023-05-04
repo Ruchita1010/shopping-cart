@@ -19,8 +19,18 @@ a {
   text-decoration: none;
 }
 
+.shopping_cart_icon_wrapper {
+  padding: 8px;
+  transition: transform 0.4s ease-in-out;
+}
+
 .shopping_cart_icon {
   width: 1.8rem;
+}
+
+.shopping_cart_icon_wrapper:hover {
+  cursor: pointer;
+  transform: rotateZ(10deg);
 }
 
 /* for hamburger menu */

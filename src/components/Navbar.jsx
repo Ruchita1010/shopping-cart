@@ -40,11 +40,13 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <img
-          src="https://img.icons8.com/pastel-glyph/64/000000/shopping-trolley--v2.png"
-          className={styles.shopping_cart_icon}
-          alt="Shopping cart icon"
-        />
+        <div className={styles.shopping_cart_icon_wrapper}>
+          <img
+            src="https://img.icons8.com/pastel-glyph/64/000000/shopping-trolley--v2.png"
+            className={styles.shopping_cart_icon}
+            alt="Shopping cart icon"
+          />
+        </div>
       </nav>
     </header>
   );
