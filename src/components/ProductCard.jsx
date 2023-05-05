@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { formatToCurrency } from '../utils/formatToCurrency';
 import styles from '../styles/ProductCard.module.css';
 
 const ProductCard = ({ product }) => {
@@ -13,7 +14,7 @@ const ProductCard = ({ product }) => {
             <p className={styles.product_colour_count}>{colourCount} Colours</p>
           </div>
           <div>
-            <p>${price}</p>
+            <p>{formatToCurrency(price)}</p>
           </div>
         </div>
       </div>
