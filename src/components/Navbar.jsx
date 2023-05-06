@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ShoppingCartContext } from '../context/ShoppingCartContext';
 import styles from '../styles/Navbar.module.css';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const { cartDispatch } = useContext(ShoppingCartContext);
   return (
     <header>
       <nav className={styles.navbar}>
@@ -40,7 +42,9 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <div className={styles.shopping_cart_icon_wrapper}>
+        <div
+          className={styles.shopping_cart_icon_wrapper}
+          onClick={() => cartDispatch({ type: 'TOGGLE_CART_DISPLAY' })}>
           <img
             src="https://img.icons8.com/pastel-glyph/64/000000/shopping-trolley--v2.png"
             className={styles.shopping_cart_icon}
