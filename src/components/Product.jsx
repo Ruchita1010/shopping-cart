@@ -1,13 +1,21 @@
+import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import data from '../data/data.json';
 import ProductSizes from './ProductSizes';
 import { formatToCurrency } from '../utils/formatToCurrency';
+import { ShoppingCartContext } from '../context/ShoppingCartContext';
 import styles from '../styles/Product.module.css';
 
 const Product = () => {
   const { id } = useParams();
   const product = data.find((item) => item.id === id);
   const { name, image, price, availableSizes, description } = product;
+  const { cartDispatch } = useContext(ShoppingCartContext);
+
+  const handleAddToCart = () => {
+    cartDispatch({ type: 'ADD_ITEM', id });
+  };
+
   return (
     <div className={styles.product_container}>
       <img src={image} alt={name} className={styles.product_image} />
@@ -15,7 +23,9 @@ const Product = () => {
         <p className={styles.product_name}>{name}</p>
         <p className={styles.product_price}>{formatToCurrency(price)}</p>
         <ProductSizes sizes={availableSizes} />
-        <button className={styles.add_to_cart_btn}>Add to Cart</button>
+        <button className={styles.add_to_cart_btn} onClick={handleAddToCart}>
+          Add to Cart
+        </button>
         <p className={styles.description}>{description}</p>
       </div>
     </div>

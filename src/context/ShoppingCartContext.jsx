@@ -7,8 +7,24 @@ const initialState = {
   isCartVisible: false,
 };
 
+const addItem = (state, id) => {
+  const { items } = state;
+  if (items.find((item) => item.id === id)) {
+    return {
+      ...state,
+      items: items.map((item) =>
+        item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+      ),
+    };
+  } else {
+    return { ...state, items: [...items, { id, quantity: 1 }] };
+  }
+};
+
 const cartReducer = (state, action) => {
   switch (action.type) {
+    case 'ADD_ITEM':
+      return addItem(state, action.id);
     case 'TOGGLE_CART_DISPLAY':
       return {
         ...state,
