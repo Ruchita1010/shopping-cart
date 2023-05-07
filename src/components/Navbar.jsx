@@ -5,7 +5,7 @@ import styles from '../styles/Navbar.module.css';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const { cartDispatch } = useContext(ShoppingCartContext);
+  const { totalQuantity, cartDispatch } = useContext(ShoppingCartContext);
   return (
     <header>
       <nav className={styles.navbar}>
@@ -50,6 +50,7 @@ const Navbar = () => {
             className={styles.shopping_cart_icon}
             alt="Shopping cart icon"
           />
+          <p className={styles.total_quantity_badge}>{totalQuantity}</p>
         </div>
       </nav>
     </header>

@@ -20,6 +20,7 @@ a {
 }
 
 .shopping_cart_icon_wrapper {
+  position: relative;
   padding: 8px;
   transition: transform 0.4s ease-in-out;
 }
@@ -31,6 +32,20 @@ a {
 .shopping_cart_icon_wrapper:hover {
   cursor: pointer;
   transform: rotateZ(10deg);
+}
+
+.total_quantity_badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  border-radius: 50px;
 }
 
 /* for hamburger menu */

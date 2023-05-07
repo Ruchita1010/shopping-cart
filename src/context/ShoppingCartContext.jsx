@@ -4,6 +4,7 @@ import Cart from '../components/Cart';
 const initialState = {
   items: [],
   totalPrice: 0,
+  totalQuantity: 0,
   isCartVisible: false,
 };
 
@@ -15,9 +16,14 @@ const addItem = (state, id) => {
       items: items.map((item) =>
         item.id === id ? { ...item, quantity: item.quantity + 1 } : item
       ),
+      totalQuantity: state.totalQuantity + 1,
     };
   } else {
-    return { ...state, items: [...items, { id, quantity: 1 }] };
+    return {
+      ...state,
+      items: [...items, { id, quantity: 1 }],
+      totalQuantity: state.totalQuantity + 1,
+    };
   }
 };
 
@@ -27,6 +33,7 @@ const removeItem = (state, id) => {
     return {
       ...state,
       items: items.filter((item) => item.id !== id),
+      totalQuantity: state.totalQuantity - 1,
     };
   }
   return {
@@ -34,6 +41,7 @@ const removeItem = (state, id) => {
     items: items.map((item) =>
       item.id === id ? { ...item, quantity: item.quantity - 1 } : item
     ),
+    totalQuantity: state.totalQuantity - 1,
   };
 };
 
