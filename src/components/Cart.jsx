@@ -1,11 +1,15 @@
 import { useContext } from 'react';
 import CartItem from './CartItem';
 import { ShoppingCartContext } from '../context/ShoppingCartContext';
+import useDisableScroll from '../hooks/useDisableScroll';
 import styles from '../styles/Cart.module.css';
 
 const Cart = () => {
   const { items, isCartVisible, cartDispatch } =
     useContext(ShoppingCartContext);
+
+  useDisableScroll(isCartVisible);
+
   return (
     isCartVisible && (
       <div className={styles.cart_container}>
