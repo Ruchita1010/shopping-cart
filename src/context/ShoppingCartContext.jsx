@@ -21,10 +21,28 @@ const addItem = (state, id) => {
   }
 };
 
+const removeItem = (state, id) => {
+  const { items } = state;
+  if (items.find((item) => item.id === id)?.quantity === 1) {
+    return {
+      ...state,
+      items: items.filter((item) => item.id !== id),
+    };
+  }
+  return {
+    ...state,
+    items: items.map((item) =>
+      item.id === id ? { ...item, quantity: item.quantity - 1 } : item
+    ),
+  };
+};
+
 const cartReducer = (state, action) => {
   switch (action.type) {
     case 'ADD_ITEM':
       return addItem(state, action.id);
+    case 'REMOVE_ITEM':
+      return removeItem(state, action.id);
     case 'TOGGLE_CART_DISPLAY':
       return {
         ...state,

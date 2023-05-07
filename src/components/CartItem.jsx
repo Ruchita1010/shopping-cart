@@ -15,6 +15,10 @@ const CartItem = ({ id, quantity }) => {
     cartDispatch({ type: 'ADD_ITEM', id });
   };
 
+  const decrementQuantity = () => {
+    cartDispatch({ type: 'REMOVE_ITEM', id });
+  };
+
   return (
     <div className={styles.item}>
       <img src={image} alt={name} className={styles.product_image} />
@@ -22,7 +26,9 @@ const CartItem = ({ id, quantity }) => {
         <p className={styles.product_name}>{name}</p>
         <p className={styles.product_price}>{formatToCurrency(price)}</p>
         <div className={styles.quantity_controller}>
-          <button className={styles.quantity_control_btn}>
+          <button
+            className={styles.quantity_control_btn}
+            onClick={decrementQuantity}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
