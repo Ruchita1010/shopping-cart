@@ -50,7 +50,9 @@ const Navbar = () => {
             className={styles.shopping_cart_icon}
             alt="Shopping cart icon"
           />
-          <p className={styles.total_quantity_badge}>{totalQuantity}</p>
+          {totalQuantity > 0 && (
+            <p className={styles.total_quantity_badge}>{totalQuantity}</p>
+          )}
         </div>
       </nav>
     </header>
