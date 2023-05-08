@@ -1,5 +1,4 @@
 import { createContext, useReducer } from 'react';
-import Cart from '../components/Cart';
 
 const initialState = {
   items: [],
@@ -68,7 +67,6 @@ export function ShoppingCartProvider({ children }) {
   return (
     <ShoppingCartContext.Provider value={{ ...cartState, cartDispatch }}>
       {children}
-      <Cart />
     </ShoppingCartContext.Provider>
   );
 }
