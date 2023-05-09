@@ -2,13 +2,19 @@ import { useContext } from 'react';
 import CartItem from './CartItem';
 import { ShoppingCartContext } from '../context/ShoppingCartContext';
 import useDisableScroll from '../hooks/useDisableScroll';
+import { formatToCurrency } from '../utils/formatToCurrency';
 import styles from '../styles/Cart.module.css';
+import '../styles/global.css';
 
 const Cart = () => {
-  const { items, isCartVisible, cartDispatch } =
+  const { items, totalPrice, isCartVisible, cartDispatch } =
     useContext(ShoppingCartContext);
 
   useDisableScroll(isCartVisible);
+
+  const handleCheckout = () => {
+    alert('Thanks for checking out :D');
+  };
 
   return (
     isCartVisible && (
@@ -32,9 +38,21 @@ const Cart = () => {
             {items.length === 0 ? (
               <p className={styles.empty_cart_message}>Your Cart Is Empty :/</p>
             ) : (
-              items.map((item) => (
-                <CartItem key={item.id} id={item.id} quantity={item.quantity} />
-              ))
+              <>
+                {items.map((item) => (
+                  <CartItem
+                    key={item.id}
+                    id={item.id}
+                    quantity={item.quantity}
+                  />
+                ))}
+                <p className={styles.total_price}>
+                  Total: {formatToCurrency(totalPrice)}
+                </p>
+                <button className="btn" onClick={handleCheckout}>
+                  Checkout
+                </button>
+              </>
             )}
           </div>
         </div>

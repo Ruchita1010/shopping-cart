@@ -1,0 +1,21 @@
+.btn {
+  padding: 1.6vmax;
+  color: #f0eced;
+  background-color: #101010;
+  font-size: 1.6vmax;
+  border-radius: 16rem;
+  border: none;
+  outline: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.005);
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    padding: 2.4vmax;
+    font-size: 2.4vmax;
+  }
+}

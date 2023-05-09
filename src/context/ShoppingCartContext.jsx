@@ -1,4 +1,5 @@
 import { createContext, useReducer } from 'react';
+import { getItemPriceById } from '../utils/priceById';
 
 const initialState = {
   items: [],
@@ -16,23 +17,27 @@ const addItem = (state, id) => {
         item.id === id ? { ...item, quantity: item.quantity + 1 } : item
       ),
       totalQuantity: state.totalQuantity + 1,
+      totalPrice: state.totalPrice + getItemPriceById(id),
     };
   } else {
     return {
       ...state,
       items: [...items, { id, quantity: 1 }],
       totalQuantity: state.totalQuantity + 1,
+      totalPrice: state.totalPrice + getItemPriceById(id),
     };
   }
 };
 
 const removeItem = (state, id) => {
   const { items } = state;
-  if (items.find((item) => item.id === id)?.quantity === 1) {
+  const item = items.find((item) => item.id === id);
+  if (item?.quantity === 1) {
     return {
       ...state,
       items: items.filter((item) => item.id !== id),
       totalQuantity: state.totalQuantity - 1,
+      totalPrice: state.totalPrice - getItemPriceById(id),
     };
   }
   return {
@@ -41,6 +46,7 @@ const removeItem = (state, id) => {
       item.id === id ? { ...item, quantity: item.quantity - 1 } : item
     ),
     totalQuantity: state.totalQuantity - 1,
+    totalPrice: state.totalPrice - getItemPriceById(id),
   };
 };
 

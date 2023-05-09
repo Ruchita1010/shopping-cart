@@ -24,20 +24,6 @@
   font-size: 2vmax;
 }
 
-.add_to_cart_btn {
-  padding: 1.6vmax;
-  color: #f0eced;
-  background-color: #101010;
-  font-size: 1.6vmax;
-  border-radius: 16rem;
-  border: none;
-  outline: none;
-}
-
-.add_to_cart_btn:hover {
-  cursor: pointer;
-}
-
 .description {
   font-size: 1.6vmax;
   line-height: 1.6;

@@ -5,6 +5,7 @@ import ProductSizes from './ProductSizes';
 import { formatToCurrency } from '../utils/formatToCurrency';
 import { ShoppingCartContext } from '../context/ShoppingCartContext';
 import styles from '../styles/Product.module.css';
+import '../styles/global.css';
 
 const Product = () => {
   const { id } = useParams();
@@ -23,7 +24,7 @@ const Product = () => {
         <p className={styles.product_name}>{name}</p>
         <p className={styles.product_price}>{formatToCurrency(price)}</p>
         <ProductSizes sizes={availableSizes} />
-        <button className={styles.add_to_cart_btn} onClick={handleAddToCart}>
+        <button className="btn" onClick={handleAddToCart}>
           Add to Cart
         </button>
         <p className={styles.description}>{description}</p>
