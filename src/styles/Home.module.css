@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.home {
+  padding: 0 12vmax;
+  margin-top: 10rem;
+  color: #ffffff;
+}
+
+.tagline {
+  font-size: 4.5vmax;
+  font-family: 'Bangers', cursive;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    padding: 0 2rem;
+    width: 100%;
+  }
+}
