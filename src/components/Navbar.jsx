@@ -9,11 +9,12 @@ const Navbar = () => {
   return (
     <header>
       <nav className={styles.navbar}>
-        <div className={styles.logo}>
-          <Link to="/" title="Home">
-            LOGO
-          </Link>
-        </div>
+        <Link to="/" title="Home">
+          <img
+            src="https://img.icons8.com/laces/64/null/shoes.png"
+            className={styles.logo}
+          />
+        </Link>
         <div
           className={`${styles.burger} ${showMenu && styles.active}`}
           onClick={() => setShowMenu(!showMenu)}>
