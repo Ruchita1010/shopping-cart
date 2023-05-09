@@ -37,9 +37,17 @@
   gap: 2rem;
 }
 
+.empty_cart_message {
+  font-size: 1.6vmax;
+}
+
 @media screen and (max-width: 768px) {
   .cart {
     width: 100%;
     z-index: 4;
+  }
+
+  .empty_cart_message {
+    font-size: 2.6vmax;
   }
 }

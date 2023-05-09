@@ -30,7 +30,7 @@ const Cart = () => {
           </div>
           <div className={styles.item_container}>
             {items.length === 0 ? (
-              <p>Your Cart Is Empty</p>
+              <p className={styles.empty_cart_message}>Your Cart Is Empty :/</p>
             ) : (
               items.map((item) => (
                 <CartItem key={item.id} id={item.id} quantity={item.quantity} />
