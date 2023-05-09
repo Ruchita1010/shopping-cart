@@ -7,9 +7,9 @@
 .product_size {
   padding: 1.4vmax;
   font-size: 1.6vmax;
-  color: #252323;
-  background-color: #ffffff;
-  border: 1px solid #d0d0d0;
+  color: var(--color-eerie-black);
+  background-color: var(--color-antiflash-white);
+  border: 1px solid var(--color-sonic-silver);
   text-align: center;
   border-radius: 4px;
   outline: none;

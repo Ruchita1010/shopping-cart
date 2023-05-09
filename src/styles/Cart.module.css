@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.768);
+  background-color: var(--color-eerie-black-transparent);
   overflow: auto;
 }
 
@@ -14,7 +14,7 @@
   padding: 2rem;
   width: 40%;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: var(--color-antiflash-white);
 }
 
 .close_cart_btn_container {
@@ -24,7 +24,7 @@
 
 .close_cart_btn {
   padding: 8px;
-  background-color: #fff;
+  background-color: var(--color-antiflash-white);
   border: none;
   outline: none;
   cursor: pointer;

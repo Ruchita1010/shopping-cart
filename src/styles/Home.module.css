@@ -3,7 +3,7 @@
 .home {
   padding: 0 12vmax;
   margin-top: 10rem;
-  color: #ffffff;
+  color: var(--color-antiflash-white);
 }
 
 .tagline {

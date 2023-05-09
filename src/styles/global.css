@@ -1,7 +1,7 @@
 .btn {
   padding: 1.6vmax;
-  color: #f0eced;
-  background-color: #101010;
+  color: var(--color-antiflash-white);
+  background-color: var(--color-eerie-black);
   font-size: 1.6vmax;
   border-radius: 16rem;
   border: none;

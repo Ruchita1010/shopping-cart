@@ -17,9 +17,10 @@
   padding-top: 1vmin;
   display: flex;
   justify-content: space-between;
+  color: var(--color-eerie-black);
 }
 
 .product_colour_count {
   margin-top: 1vmin;
-  color: #757575;
+  color: var(--color-sonic-silver);
 }

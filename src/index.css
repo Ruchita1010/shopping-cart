@@ -6,7 +6,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-antiflash-white: hsl(210, 8%, 95%);
+  --color-eerie-black: hsl(0, 0%, 9%);
+  --color-antiflash-white-transparent: hsla(210, 8%, 95%, 0.6);
+  --color-eerie-black-transparent: hsla(0, 0%, 9%, 0.85);
+  --color-sonic-silver: hsl(0, 0%, 46%);
+}
+
 body,
 html {
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  background-color: var(--color-antiflash-white);
+  color: var(--color-eerie-black);
 }

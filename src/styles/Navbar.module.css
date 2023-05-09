@@ -10,12 +10,11 @@
   width: 30%;
   display: flex;
   justify-content: space-evenly;
-  color: #000;
   list-style: none;
 }
 
 a {
-  color: #000;
+  color: var(--color-eerie-black);
   text-decoration: none;
 }
 
@@ -42,8 +41,8 @@ a {
   height: 20px;
   display: grid;
   place-items: center;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--color-antiflash-white);
+  background-color: var(--color-eerie-black-transparent);
   font-size: 12px;
   border-radius: 50px;
 }
@@ -66,7 +65,7 @@ a {
   left: 0;
   width: 100%;
   height: 2.1px;
-  background-color: #000;
+  background-color: var(--color-eerie-black);
   border: none;
   outline: none;
   transition: all 0.4s ease-in-out;
@@ -128,7 +127,7 @@ a {
     height: 100vh;
     flex-direction: column;
     align-items: center;
-    background-color: #f0eceda3;
+    background-color: var(--color-antiflash-white-transparent);
     backdrop-filter: blur(10px);
     transform: translateX(-100%);
     transition: transform 0.5s ease-in;
