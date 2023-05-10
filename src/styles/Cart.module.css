@@ -6,7 +6,7 @@
   min-height: 100vh;
   background-color: var(--color-eerie-black-transparent);
   transform: translateX(100%);
-  transition: transform 0.4s ease-in-out 0s;
+  transition: transform 0.4s ease-in-out 0.6s;
   overflow-x: hidden; /* prevents the horizontal scrollbar from appearing during the transition */
   overflow-y: auto; /* allow vertical scrolling to scroll through the cart items */
   z-index: 4; /* to hide the burger menu icon when cart is open */
@@ -23,9 +23,14 @@
   transition: transform 0.4s ease-in-out 0.3s;
 }
 
-.cart_container.active,
+.cart_container.active {
+  transform: translateX(0%);
+  transition: transform 0.4s ease-in-out 0.3s;
+}
+
 .cart.active {
   transform: translateX(0%);
+  transition: transform 0.4s ease-in-out 0.6s;
 }
 
 .close_cart_btn_container {
