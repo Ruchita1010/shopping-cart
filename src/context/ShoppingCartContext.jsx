@@ -1,4 +1,4 @@
-import { createContext, useReducer } from 'react';
+import { createContext, useContext, useReducer } from 'react';
 import { getItemPriceById } from '../utils/priceById';
 
 const initialState = {
@@ -66,7 +66,11 @@ const cartReducer = (state, action) => {
   }
 };
 
-export const ShoppingCartContext = createContext();
+const ShoppingCartContext = createContext();
+
+export function useShoppingCartContext() {
+  return useContext(ShoppingCartContext);
+}
 
 export function ShoppingCartProvider({ children }) {
   const [cartState, cartDispatch] = useReducer(cartReducer, initialState);

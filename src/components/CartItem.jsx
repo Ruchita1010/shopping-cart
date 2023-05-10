@@ -1,7 +1,6 @@
-import { useContext } from 'react';
 import data from '../data/data.json';
 import { formatToCurrency } from '../utils/formatToCurrency';
-import { ShoppingCartContext } from '../context/ShoppingCartContext';
+import { useShoppingCartContext } from '../context/ShoppingCartContext';
 import styles from '../styles/CartItem.module.css';
 
 const CartItem = ({ id, quantity }) => {
@@ -9,7 +8,7 @@ const CartItem = ({ id, quantity }) => {
   if (!item) return null;
 
   const { name, image, price } = item;
-  const { cartDispatch } = useContext(ShoppingCartContext);
+  const { cartDispatch } = useShoppingCartContext();
 
   const incrementQuantity = () => {
     cartDispatch({ type: 'ADD_ITEM', id });

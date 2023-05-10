@@ -1,6 +1,5 @@
-import { useContext } from 'react';
 import CartItem from './CartItem';
-import { ShoppingCartContext } from '../context/ShoppingCartContext';
+import { useShoppingCartContext } from '../context/ShoppingCartContext';
 import useDisableScroll from '../hooks/useDisableScroll';
 import { formatToCurrency } from '../utils/formatToCurrency';
 import styles from '../styles/Cart.module.css';
@@ -8,7 +7,7 @@ import '../styles/global.css';
 
 const Cart = () => {
   const { items, totalPrice, isCartVisible, cartDispatch } =
-    useContext(ShoppingCartContext);
+    useShoppingCartContext();
 
   useDisableScroll(isCartVisible);
 

@@ -1,11 +1,11 @@
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingCartContext } from '../context/ShoppingCartContext';
+import { useShoppingCartContext } from '../context/ShoppingCartContext';
 import styles from '../styles/Navbar.module.css';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const { totalQuantity, cartDispatch } = useContext(ShoppingCartContext);
+  const { totalQuantity, cartDispatch } = useShoppingCartContext();
   return (
     <header>
       <nav className={styles.navbar}>
