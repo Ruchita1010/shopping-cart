@@ -1,20 +1,30 @@
 .cart_container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   min-height: 100vh;
   background-color: var(--color-eerie-black-transparent);
-  overflow: auto;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out 0s;
+  overflow-x: hidden; /* prevents the horizontal scrollbar from appearing during the transition */
+  overflow-y: auto; /* allow vertical scrolling to scroll through the cart items */
 }
 
 .cart {
-  position: absolute;
+  position: fixed;
   right: 0;
   padding: 2rem;
   width: 40%;
   min-height: 100vh;
   background-color: var(--color-antiflash-white);
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out 0.3s;
+}
+
+.cart_container.active,
+.cart.active {
+  transform: translateX(0%);
 }
 
 .close_cart_btn_container {
