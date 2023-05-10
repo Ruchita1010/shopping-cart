@@ -9,6 +9,7 @@
   transition: transform 0.4s ease-in-out 0s;
   overflow-x: hidden; /* prevents the horizontal scrollbar from appearing during the transition */
   overflow-y: auto; /* allow vertical scrolling to scroll through the cart items */
+  z-index: 4; /* to hide the burger menu icon when cart is open */
 }
 
 .cart {

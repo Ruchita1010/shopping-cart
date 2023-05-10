@@ -57,7 +57,7 @@ a {
   border: none;
   outline: none;
   cursor: pointer;
-  z-index: 2;
+  z-index: 4; /* so that the burger menu icon doesn't hide below the nav list when it's open */
 }
 
 .burger_line {
@@ -131,5 +131,6 @@ a {
     backdrop-filter: blur(10px);
     transform: translateX(-100%);
     transition: transform 0.5s ease-in;
+    z-index: 2; /* to hide the cart icon when nav list is open */
   }
 }
