@@ -1,11 +1,11 @@
-import { v4 as uuidv4 } from 'uuid';
 import styles from './styles/ProductSizes.module.css';
 
+// using index as key bcoz the sizes list won't ever change, it's static!
 const ProductSizes = ({ sizes }) => {
   return (
     <div className={styles.product_sizes}>
-      {sizes.map((size) => (
-        <div key={uuidv4()} className={styles.product_size}>
+      {sizes.map((size, index) => (
+        <div key={index} className={styles.product_size}>
           {size}
         </div>
       ))}
