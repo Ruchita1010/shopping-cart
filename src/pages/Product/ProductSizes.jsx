@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import styles from '../styles/ProductSizes.module.css';
+import styles from './styles/ProductSizes.module.css';
 
 const ProductSizes = ({ sizes }) => {
   return (

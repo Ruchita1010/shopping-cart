@@ -1,6 +1,6 @@
 import ProductCard from './ProductCard';
-import products from '../data/data.json';
-import styles from '../styles/Shop.module.css';
+import products from '../../data/data.json';
+import styles from './styles/Shop.module.css';
 
 const Shop = () => {
   return (

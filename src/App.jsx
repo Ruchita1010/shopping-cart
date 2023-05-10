@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
-import Home from './components/Home';
-import Shop from './components/Shop';
-import Product from './components/Product';
+import Home from './pages/Home/Home.jsx';
+import Shop from './pages/Shop/Shop';
+import Product from './pages/Product/Product';
 import { ShoppingCartProvider } from './context/ShoppingCartContext';
 
 const App = () => {

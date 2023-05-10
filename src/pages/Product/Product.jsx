@@ -1,11 +1,11 @@
 import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
-import data from '../data/data.json';
+import data from '../../data/data.json';
 import ProductSizes from './ProductSizes';
-import { formatToCurrency } from '../utils/formatToCurrency';
-import { ShoppingCartContext } from '../context/ShoppingCartContext';
-import styles from '../styles/Product.module.css';
-import '../styles/global.css';
+import { formatToCurrency } from '../../utils/formatToCurrency';
+import { ShoppingCartContext } from '../../context/ShoppingCartContext';
+import styles from './styles/Product.module.css';
+import '../../styles/global.css';
 
 const Product = () => {
   const { id } = useParams();

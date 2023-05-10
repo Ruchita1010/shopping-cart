@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { formatToCurrency } from '../utils/formatToCurrency';
-import styles from '../styles/ProductCard.module.css';
+import { formatToCurrency } from '../../utils/formatToCurrency';
+import styles from './styles/ProductCard.module.css';
 
 const ProductCard = ({ product }) => {
   const { id, name, image, colourCount, price } = product;
