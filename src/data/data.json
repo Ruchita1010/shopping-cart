@@ -2,7 +2,7 @@
   {
     "id": "8e62645e-9023-4916-ac4f-0568dc79e366",
     "name": "Air Jordan 1 Mid SE",
-    "image": "/shoes/air-jordan-1-mid-se.jpg",
+    "imageName": "air-jordan-1-mid-se",
     "colourCount": 1,
     "price": 225,
     "availableSizes": [
@@ -22,7 +22,7 @@
   {
     "id": "36ce00e8-0f7b-4ee8-a89a-e74a5b33dd70",
     "name": "Dunk Low",
-    "image": "/shoes/dunk-low.jpg",
+    "imageName": "dunk-low",
     "colourCount": 3,
     "price": 219,
     "availableSizes": [
@@ -45,7 +45,7 @@
   {
     "id": "0327fa9a-8614-49b1-96bc-e72888f108fe",
     "name": "Air Force 1 Mid '07",
-    "image": "/shoes/air-force-1-mid-07.jpg",
+    "imageName": "air-force-1-mid-07",
     "colourCount": 1,
     "price": 159,
     "availableSizes": [
@@ -64,7 +64,7 @@
   {
     "id": "c1f3ccd9-f332-4fb8-a0ad-b3405c1452fd",
     "name": "Air Force 1 '07 LX",
-    "image": "/shoes/air-force-1-07-lx.jpg",
+    "imageName": "air-force-1-07-lx",
     "colourCount": 1,
     "price": 219,
     "availableSizes": [
@@ -84,7 +84,7 @@
   {
     "id": "be50c0d7-e8ed-4710-9b0c-5713c7a95ddc",
     "name": "Air Force 1 '07",
-    "image": "/shoes/air-force-1-07.jpg",
+    "imageName": "air-force-1-07",
     "colourCount": 2,
     "price": 165,
     "availableSizes": ["US 7", "US 7.5", "US 8", "US 8.5", "US 9", "US 9.5"],
@@ -93,7 +93,7 @@
   {
     "id": "42fdbb67-81cf-49b6-8886-c24878beaafa",
     "name": "Zoom Fly 5",
-    "image": "/shoes/zoom-fly-5.jpg",
+    "imageName": "zoom-fly-5",
     "colourCount": 1,
     "price": 249,
     "availableSizes": [
@@ -111,7 +111,7 @@
   {
     "id": "be078568-5983-4b0c-a583-81773bd26849",
     "name": "Air Jordan 1 Mid",
-    "image": "/shoes/air-jordan-1-mid.jpg",
+    "imageName": "air-jordan-1-mid",
     "colourCount": 1,
     "price": 225,
     "availableSizes": [
@@ -129,7 +129,7 @@
   {
     "id": "482bde18-3ea2-4010-b9b8-92a927ab780a",
     "name": "Zoom Kobe 6 'Grinch'",
-    "image": "/shoes/zoom-kobe-6-grinch.jpg",
+    "imageName": "zoom-kobe-6-grinch",
     "colourCount": 1,
     "price": 259,
     "availableSizes": [
@@ -150,7 +150,7 @@
   {
     "id": "b92e99ae-ed88-4395-ad16-eb4baadb6ab5",
     "name": "Air Force 1 High '07 ",
-    "image": "/shoes/air-force-1-high-07.jpg",
+    "imageName": "air-force-1-high-07",
     "colourCount": 1,
     "price": 145,
     "availableSizes": ["US 8", "US 8.5", "US 9", "US 9.5", "US 10", "US 10.5"],
@@ -159,7 +159,7 @@
   {
     "id": "9bfb6577-096d-45f0-8053-d6dac6039a5e",
     "name": "Blazer Mid '77 By You",
-    "image": "/shoes/blazer-mid-77-by-you.jpg",
+    "imageName": "blazer-mid-77-by-you",
     "colourCount": 2,
     "price": 209,
     "availableSizes": [
@@ -178,7 +178,7 @@
   {
     "id": "a54ad1dc-e9da-4dd5-9fa5-745f7b6f421f",
     "name": "Dunk High By You",
-    "image": "/shoes/dunk-high-by-you.jpg",
+    "imageName": "dunk-high-by-you",
     "colourCount": 2,
     "price": 165,
     "availableSizes": [
@@ -197,7 +197,7 @@
   {
     "id": "037fffca-2678-4c0a-b3eb-b72ddf1afc21",
     "name": "Air Force 1 Low",
-    "image": "/shoes/air-force-1-low.jpg",
+    "imageName": "air-force-1-low",
     "colourCount": 3,
     "price": 130,
     "availableSizes": ["US 9", "US 9.5", "US 10", "US 10.5", "US 11"],
@@ -206,7 +206,7 @@
   {
     "id": "44001e7e-e6f8-4eff-ad04-239b6039a55b",
     "name": "Air Jordan 1 Retro High OG",
-    "image": "/shoes/air-jordan-1-retro-high-og.jpg",
+    "imageName": "air-jordan-1-retro-high-og",
     "colourCount": 2,
     "price": 180,
     "availableSizes": [
@@ -229,7 +229,7 @@
   {
     "id": "98cb1aea-767b-41c5-b33d-03c86f7a26b1",
     "name": "Air Force 1 LV8",
-    "image": "/shoes/air-force-1-lv8.jpg",
+    "imageName": "air-force-1-lv8",
     "colourCount": 2,
     "price": 130,
     "availableSizes": [
@@ -252,7 +252,7 @@
   {
     "id": "c1e97bcf-1cd7-41c3-802e-7c08e6bf00b2",
     "name": "Air Jordan 5 Retro",
-    "image": "/shoes/air-jordan-5-retro.jpg",
+    "imageName": "air-jordan-5-retro",
     "colourCount": 1,
     "price": 180,
     "availableSizes": [
@@ -271,7 +271,7 @@
   {
     "id": "94bd299a-64cc-4c2b-9d9c-405f35627741",
     "name": "Blazer Mid'77 Unlocked",
-    "image": "/shoes/blazer-mid-77-unlocked.jpg",
+    "imageName": "blazer-mid-77-unlocked",
     "colourCount": 1,
     "price": 110,
     "availableSizes": ["US 7", "US 7.5", "US 8", "US 8.5", "US 9", "US 9.5"],

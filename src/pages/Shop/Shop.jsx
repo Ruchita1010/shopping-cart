@@ -1,5 +1,5 @@
 import ProductCard from './ProductCard';
-import products from '../../data/data.json';
+import products from '../../utils/getProductDataWithImage';
 import styles from './styles/Shop.module.css';
 
 const Shop = () => {

@@ -1,13 +1,13 @@
-import data from '../data/data.json';
+import products from '../utils/getProductDataWithImage';
 import { formatToCurrency } from '../utils/formatToCurrency';
 import { useShoppingCartContext } from '../context/ShoppingCartContext';
 import styles from '../styles/CartItem.module.css';
 
 const CartItem = ({ id, quantity }) => {
-  const item = data.find((item) => item.id === id);
-  if (!item) return null;
+  const product = products.find((product) => product.id === id);
+  if (!product) return null;
 
-  const { name, image, price } = item;
+  const { name, image, price } = product;
   const { cartDispatch } = useShoppingCartContext();
 
   const incrementQuantity = () => {

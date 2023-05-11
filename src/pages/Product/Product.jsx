@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import data from '../../data/data.json';
+import products from '../../utils/getProductDataWithImage';
 import ProductSizes from './ProductSizes';
 import { formatToCurrency } from '../../utils/formatToCurrency';
 import { useShoppingCartContext } from '../../context/ShoppingCartContext';
@@ -8,7 +8,7 @@ import '../../styles/global.css';
 
 const Product = () => {
   const { id } = useParams();
-  const product = data.find((item) => item.id === id);
+  const product = products.find((product) => product.id === id);
   const { name, image, price, availableSizes, description } = product;
   const { cartDispatch } = useShoppingCartContext();
 
