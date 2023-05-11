@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://ruchita1010.github.io/shopping-cart/",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
