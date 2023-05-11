@@ -34,4 +34,16 @@
     padding: 4vmax;
     grid-template-columns: 1fr;
   }
+
+  .product_name {
+    font-size: 3.4vmax;
+  }
+
+  .product_price {
+    font-size: 3vmax;
+  }
+
+  .description {
+    font-size: 2.2vmax;
+  }
 }
