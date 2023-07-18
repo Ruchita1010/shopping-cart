@@ -30,19 +30,19 @@ A Shopping Cart application built with React for TheOdinProject. The application
 
 ### Home
 
-![image](./readme-assets/home.png)
+![Shoes background image and a navbar](https://github.com/Ruchita1010/shopping-cart/assets/70577616/ea7e858e-353e-407c-be7e-79791ef29ada)
 
 ### Shop
 
-![image](./readme-assets/shop.png)
+![Grid of images of shoes](https://github.com/Ruchita1010/shopping-cart/assets/70577616/c454b84b-d944-4271-9aa8-c104c3e40176)
 
 ### Product
 
-![image](./readme-assets/product.png)
+![Shoe image along with its details and 'Add to Cart' button](https://github.com/Ruchita1010/shopping-cart/assets/70577616/fdaa42df-feb3-4a0d-a018-a33e603b8187)
 
 ### Cart
 
-![image](./readme-assets/cart.png)
+![Two shoes added to cart, total amount and a checkout button](https://github.com/Ruchita1010/shopping-cart/assets/70577616/43651ac0-ecbe-454d-8fd3-9c913e14bfcb)
 
 ## Demo
 
